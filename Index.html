@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Ishihara Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="test-container">
+        <h1>Color Blindness Test</h1>
+        <div id="quiz-box">
+            <img id="plate-image" src="images/plate1.png" alt="Ishihara Plate">
+            <p>What number do you see?</p>
+            <input type="text" id="user-answer" placeholder="Type number or 'none'">
+            <button id="next-btn" onclick="nextPlate()">Submit</button>
+        </div>
+        <div id="result-box" class="hidden">
+            <h2>Your Results</h2>
+            <p id="score-text"></p>
+            <button onclick="location.reload()">Restart Test</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
